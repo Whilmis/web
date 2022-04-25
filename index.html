@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/juegostyle.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="./css/menu-nav.css" rel="stylesheet" />
+    <title>Whilmis webs</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="nav_container">
+        <img src="./img/logo.png" alt="logo de la web" class="img_nav">
+        <nav class="nav">
+            <a href="#header " class="nav_link">
+               Inicio
+            </a><a href="#about" class="nav_link">
+              Acerca de
+            </a><a href="#trabajo" class="nav_link">
+                Portafolio
+            </a>
+            <a href="#game" class="nav_link"> 
+             Juego 
+            </a><a href="#footer" class="nav_link">
+                Contacto
+            </a>
+        </nav>
+     
+        <button  id="pmostrar-menu" class="pmostrar-menu visible"><img src="img/menu.png" alt="menu" class="img-menu"></button>
+        
+    </div>
+ 
+        <img src="./img/whilmissin.png" alt="hero" class="hero_img sin">
+        <img src="./img/whilmis.png" alt="hero"class="hero_img con">
+        <h1 class="text">Whilmis
+             webs</h1>
+  
+    </header>
+
+   
+    <div class="pmenu-nav">
+      <button id="pcerrar-menu" class="pcerrar-menu" aria-label="Cerrar">
+        &times;
+      </button>
+      <ul>
+        <li><a href="#header " class="nav_link">
+          Inicio
+       </a></li>
+        <li><a href="#about" class="nav_link">
+          Acerca de
+        </a></li>
+        <li><a href="#trabajo" class="nav_link">
+          Portafolio
+      </a></li>
+        <li><a href="#game" class="nav_link"> 
+          Juego 
+         </a></li>
+        </li>
+        <li><a href="#footer" class="nav_link">
+          Contacto
+      </a></li>
+      </ul>
+    </div>
+    <main>
+        <section class="about" id="about">
+            <div class="container about_container">
+            <img src="./img/about.png" alt="imagen del creador de la pagina" class="about_img">
+            <div class="about_text">
+               <h3 class="about_title">Sobre mi</h3>
+               <p class="about_p">Soy un joven apasionado con la tecnología con múltiples conocimientos y experiencias en el área, en capacidad de realizar diferentes proyectos de software como webs, aplicaciones móviles y aplicaciones de escritorio uniéndolo con mi conocimiento a nivel de diseño gráfico utilizando herramientas como adobe Photoshop, adobe XD, adobe Ilustrator asi como tambien las tecnologías web como HTM5, CSS3 Y JavaScript con diferentes frameworks como React, bootstrap y node además de lenguajes como C# y bases de datos como mySQL, Mongodb  etc.   </p>
+            </div>
+        </div>
+        </section>
+        <section class="work " id="trabajo">
+            <div class="contenedor">
+            <h3>Nuestro trabajo</h3>
+            <p class="after">Hacemos de algo simple algo extraordinario</p>
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Todos</li>
+                    <li class="filter" data-nombre='diseño'>Diseño</li>
+                    <li class="filter" data-nombre='programacion'>Programacion</li>
+                </ul>
+            </div>
+            <div class="galeria-work">
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion1.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Programacion</h4>
+                    </div>
+                </div>
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion2.JPG" alt="">
+                    </div>
+                   
+                    <div class="textos-work">
+                        <h4>Programacion</h4>
+                    </div>
+                </div>
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion3.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Programacion</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño1.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Diseño</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño2.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Diseño</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño3.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Diseño</h4>
+                    </div>
+                </div>
+               
+        </div>
+        </section>
+        <section class="game" id="game">
+            <div id="bienvenida" class="bienvenida">
+                <h1>👋juego de memory 👋</h1>
+                <h3>Con tecnologías y lenguajes que utilizo</h3>
+                <div class="bienvenida-botones">
+                  <button id="juego-normal">¡Quiero jugar!</button>
+                  <button id="juego-relax">Modo relax</button>
+                </div>
+              </div>
+              <div class="cabecera">
+                <div class="contadores">
+                  <div class="contador-item">
+                    <h4 class="cabecera-titulo">Movimientos</h4>
+                    <div class="cabecera-num">
+                      <span id="mov">00</span>/<span id="mov-total">20</span>
+                    </div>
+                  </div>
+                  <div id="cronometro" class="contador-item">
+                    <h4 class="cabecera-titulo">Tiempo</h4>
+                    <div class="cabecera-num">
+                      <span id="minutos">00</span>:<span id="segundos">00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="nivel">
+                  <h4 class="cabecera-titulo">Nivel</h4>
+                  <div class="cabecera-num"><span id="nivel">01</span></div>
+                </div>
+                <button id="control-nivel" class="control-nivel">…</button>
+              </div>
+              <div class="main">
+                <div id="mesa" class="mesa"></div>
+                <div id="subeNivel" class="sube-nivel">
+                  <div class="modal">
+                    <h2>¡Muy bien!</h2>
+                    <button id="subir">Siguiente nivel</button>
+                    <button class="reiniciar">Reiniciar</button>
+                  </div>
+                </div>
+                <div id="gameOver" class="game-over">
+                  <div class="modal">
+                    <h2>¡Oh no!</h2>
+                    <p>Te has quedado sin movimientos 😭</p>
+                    <button class="reiniciar">Reiniciar</button>
+                  </div>
+                </div>
+                <div id="timeOver" class="game-over">
+                  <div class="modal">
+                    <h2>¡Oh no!</h2>
+                    <p>Te has quedado sin tiempo 😭</p>
+                    <button class="reiniciar">Reiniciar</button>
+                  </div>
+                </div>
+                <div id="endGame" class="end-game">
+                  <div class="modal">
+                    <h2>¡Enhorabuena!</h2>
+                    <p>Has superado todos los niveles 🏆</p>
+                    <button class="reiniciar">Reiniciar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="selecciona-nivel">
+                <button id="cierra-niveles" class="cierra-niveles">&times;</button>
+                <ul></ul>
+              </div>
+          
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor">
+            <h2 class="titulo-footer">Contactanos</h2>
+            <h3 class="subtitulo-footer">Lo apreciariamos mucho</h3>
+            <div class="footer">
+                <form action="https://formsubmit.co/whilmisweb@gmail.com" method="POST">
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <input type="email" name="Email" id="Email" placeholder="Email">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <audio
+    src="sonidos/acierto.mp3"
+    class="sonido"
+    id="sonido-acierto"
+    preload="auto"
+  ></audio>
+  <audio
+    src="sonidos/error.mp3"
+    class="sonido"
+    id="sonido-error"
+    preload="auto"
+  ></audio>
+  <audio
+    src="sonidos/carta.mp3"
+    class="sonido"
+    id="sonido-carta"
+    preload="auto"
+  ></audio>
+  <script src="js/menu.js"></script>
+  <script src="js/variables-globales.js"></script>
+  <script src="js/descubrir-comparar.js"></script>
+  <script src="js/baraja-reparte.js"></script>
+  <script src="js/acierto-error.js"></script>
+  <script src="js/contador.js"></script>
+  <script src="js/cronometro.js"></script>
+  <script src="js/finalizar.js"></script>
+  <script src="js/cambia-nivel.js"></script>
+  <script src="js/game-over.js"></script>
+  <script src="js/menu-niveles.js"></script>
+  <script src="js/iniciar.js"></script>
+  <script src="js/comienza-juego.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/filtro.js"></script>
+</body>
+
+</html>
