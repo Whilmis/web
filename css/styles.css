@@ -82,7 +82,7 @@ color: white;
     right: 30%;
    width: 85%;
    max-width: 550px;
-   min-width: 300px;
+   min-width: 350px;
    height: auto;
    
 
@@ -350,6 +350,12 @@ input[type="submit"] {
       .nav{
           display: none;
       }
+
+      .header .hero_img{
+    width: 700px;
+       
+    
+    }
       
    
       button {
